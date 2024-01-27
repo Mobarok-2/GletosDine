@@ -145,33 +145,27 @@
 
         //Login Query
         public function login($query, $data, $path) {
-
-            //email_validation
-
+            // email_validation
+        
             $login_user = $this->link->query($query);
             $login_user->execute();
-
+        
             $fetch = $login_user->fetch(PDO::FETCH_ASSOC);
-
-            if($login_user->rowCount() > 0) {
-
-                //password
-                if(password_verify($data['password'], $fetch['password'])) {
-                   
-                    echo "<script>htmlspecialchars('Invalid Email Or Password')</script>";
-                // 
-             
-                } else {
-                    //session variables
+        
+            if ($login_user->rowCount() > 0) {
+                // password
+                if (password_verify($data['password'], $fetch['password'])) {
+                    // session variables
                     $_SESSION['username'] = $fetch['username'];
                     $_SESSION['email'] = $fetch['email'];
                     $_SESSION['user_id'] = $fetch['id'];
-
-                    header("location: ".$path."");
+        
+                    header("location: " . $path);
+                } else {
+                    echo "<script>alert('Invalid Email Or Password')</script>";
                 }
             }
-
-        }
+        }        
 
         //starting session 
 
