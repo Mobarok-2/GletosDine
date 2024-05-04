@@ -8,7 +8,7 @@ define("APPURL", "http://localhost/SULTANDINE")?>
 
 <head>
     <meta charset="utf-8">
-    <title>Sultandine - Best Kacchi in Twon</title>
+    <title>Gelato's Den - Best Ice Cream in Twon</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -52,8 +52,8 @@ define("APPURL", "http://localhost/SULTANDINE")?>
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="<?php echo APPURL; ?>/index.php" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"></h1>
-                   <img src="<?php echo APPURL; ?>/img/logo.png" alt="Logo"> 
+                    <h1 class="text-primary m-0">Gelato's Den</h1>
+                  
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
